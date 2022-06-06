@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <title>Interactive Maps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Maps</h1>
+    <h2>Assignment 2</h2>
+    <h3>Julia Ingram</h3>
+    <div class="text-container">
+        <h4>Dominant industry of each county, 2015</h4>
+        <div id="chloro-map" class="map"></div>
+            <div id="type-legend" class="legend">
+                <h4>Industry</h4>
+                <div><span style="background-color: #7fc97f"></span>Nonspecialized</div>
+                <div><span style="background-color: #beaed4"></span>Farming</div>
+                <div><span style="background-color: #fdc086"></span>Mining</div>
+                <div><span style="background-color: #ffff99"></span>Manufacturing</div>
+                <div><span style="background-color: #386cb0"></span>Federal/State Government</div>
+                <div><span style="background-color: #f0027f"></span>Recreation</div>
+            </div>
+        <script type="text/javascript" src="chloro-map.js"></script>
+        <p>Data Source: USDA Economic Research Service <a href="https://www.ers.usda.gov/data-products/county-typology-codes.aspx">County Typology Codes</a></p>
+        <br><h4>Global natural disasters, 1960 to 2008</h4>
+        <p>Each dot represents one disaster, sized according to its intensity. More transparent points represent disasters that occured further into the past.</p>
+        <div id="point-map" class="map"></div>
+        <div id="diastertype-legend" class="legend">
+            <h4>Natural Disaster Types</h4>
+            <div><span style="background-color: #41BBD9"></span>Flood</div>
+            <div><span style="background-color: #82ABA1"></span>Storm</div>
+            <div><span style="background-color: #A6A57A"></span>Drought</div>
+            <div><span style="background-color: #99C24D"></span>Earthquake</div>
+            <div><span style="background-color: #FFA500"></span>Extreme temperature</div>
+            <div><span style="background-color: #140F2D"></span>Mass movement (dry)</div>
+            <div><span style="background-color: #C1CC99"></span>Landslide</div>
+            <div><span style="background-color: #A33B20"></span>Volcanic Activity</div>
+        </div>
+        <script type="text/javascript" src="point-map.js"></script>
+        <p>Data Source: NASA Socioeconomic Data and Applications Center, <a href="https://sedac.ciesin.columbia.edu/data/set/pend-gdis-1960-2018/data-download">Natural Disasters dataset</a></p>
+    </div>
+</body>
+</html>

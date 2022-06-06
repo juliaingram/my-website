@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <title>Election Map 2020</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Presidental Election Maps 2020</h1>
+    <h2>Tutorial, Assignment 2</h2>
+    <h3>Julia Ingram</h3>
+    <p style="font-weight:italic">Recreating The New York Times <a href="https://www.nytimes.com/interactive/2019/11/05/us/elections/results-kentucky-governor-general-election.html">election results maps.</a></p>
+    <p style="font-weight:bold">Chloropleth map showing winning candidate by county and state</p>
+    <div id="chloro-map" class="map">
+        <script type="text/javascript" src="chloro-map.js"></script>
+    </div>
+    <p style="font-weight:bold">Graduated point map showing winning candidate by county</p>
+    <div id="point-map" class="map">
+        <script type="text/javascript" src="point-map.js"></script>
+    </div>
+    <p>Data Sources:
+        <ul>
+            <li>US Counties. Download from U.S. Census Bureau - Cartographic Boundary Files.</li>
+            <li>US States. Download from U.S. Census Bureau - Cartographic Boundary Files.</li>
+            <li>US Presidential Election Results at the County Level. Download from MIT Election Data + Science Lab</li>
+        </ul>
+    </p>
+</body>
+</html>
